@@ -17,29 +17,32 @@ public class Main {
         System.out.println("\n");
         System.out.println("........");
         System.out.println("\n");
-        System.out.print("Enter the Number: ");
-        int store = sc.nextInt();
-        switch (store){
-            case 1:
-                BS.Book_A_Seat(1,"Asrar","lahore");
-                BS.Book_A_Seat(1,"Saqib","Karachi");
-                BS.Book_A_Seat(1,"Aqib","Multan");
-                break;
-            case 2:
-                BS.cancel_seat("1","lahore");
-                break;
-            case 3:
-                BS.display();
-                break;
-            case 4:
-                System.out.println("Thanks....");
-                break;
-            default:
-                System.out.println("Invalid Number....");
-        }
+//        System.out.print("Enter the Number: ");
+//        int store = sc.nextInt();
+//        switch (store){
+//            case 1:
+//                BS.Book_A_Seat(1,"Asrar","lahore");
+//                BS.Book_A_Seat(1,"Saqib","Karachi");
+//                BS.Book_A_Seat(1,"Aqib","Multan");
+//                break;
+//            case 2:
+//                BS.cancel_seat("1","lahore");
+//                break;
+//            case 3:
+//                BS.display();
+//                break;
+//            case 4:
+//                System.out.println("Thanks....");
+//                break;
+//            default:
+//                System.out.println("Invalid Number....");
+//        }
+        ;
+        BS.Book_A_Seat(1,"Asrar","lahore");
+        BS.Book_A_Seat(1,"Saqib","Karachi");
+        BS.Book_A_Seat(1,"Aqib","Multan");
+        BS.Find_Seat_No(1,"Saqib");
 
-       BS.cancel_seat("1","lahore");
-        BS.display();
     }
 }
 

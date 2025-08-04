@@ -1,3 +1,4 @@
+import javax.naming.spi.NamingManager;
 import java.util.*;
 
 public class Bus_Structure {
@@ -92,5 +93,21 @@ public class Bus_Structure {
             }
         }
         return isCheck;
+    }
+
+    void Find_Seat_No(int seat_no , String Name){
+            String re_name = Name.toUpperCase();
+            boolean isCheck = true;
+            for(var s: storeData){
+                if (s.contains("Seat NO: " + seat_no) && s.contains(" , Name: " + re_name)){
+                    System.out.println("Seat is Available: ");
+                    System.out.println(s);
+                    isCheck = false;
+                }
+            }
+            if (isCheck){
+                System.out.println("Seat not Available....");
+            }
+
     }
 }
